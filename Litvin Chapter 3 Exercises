@@ -1,13 +1,16 @@
-1.(a) True:  
-  (b) True:
+1.(a) False: The name of a class must be the same as the source file plus the extension .java preventing multiple classes in a folder.
+  (b) True: The names of classes are case-sensitive due to convention in java. 
   (c) False: The import statement tells the compiler where to look for other classes used by this class.
-4.(a) True:
-  (b) True:
-  (c) 
-  (d)
-  (e)
-5. 
-7. 
-11.
-14.
-16.
+4.(a) True: Public fields can be accessed and changed by other classes outside the program.
+  (b) True: An object must be made using the new = operator when the program runs.
+  (c) True: A class can have more than one object and each object has a least one constructor.
+  (d) True: Like with GridWorl, the objects within the class must be defined (ex: Bug).
+  (e) True: The init method is actually a constructor that runs before the program. 
+5. Three benefits of encapsulation are program maintenance, documentation, and code reuse.
+7. cannot get GridWorld to work
+11. I have somewhat of an idea of what this asks for...
+14.(a) True
+   (b) False
+16. I have not idea how to test these or predict errors.
+
+CONSIDER THIS HW LATE--I WILL NOT BE TURNING IT IN 9/20--I WILL BE SEEKING HELP TO AVOID FUTURE DISASTER
