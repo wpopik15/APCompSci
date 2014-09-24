@@ -1,0 +1,6 @@
+  In Chapter 4, Livtin mentions that recursive solutions are less effective in run time and memory space in some cases when
+compared to iterations. However, the hardware stack enables a recursive solution in file managing. Therefore, how does one
+determine when a recursive solution is needed versus a iterations solution? Secondly, pseudocode is also mentioned early
+on in the chapter. Does pseudocode have a rigid syntax structure like Java, and if so how does one begin to write in
+pseudocode? More importantly, how does one translate pseudocode to Java and vice versa. Finally, if recursion is handled  
+as a form of iterations by the computer program how can one be more effcient if both contain iterations? 
