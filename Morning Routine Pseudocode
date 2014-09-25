@@ -1,0 +1,93 @@
+wake up
+get hrs
+get min
+get hrsSleep
+get mood
+if hrs = 6 AND min <= 59
+  print "You should probably wake up" message
+elif hrs = 7 and min >= 1
+  print "Get up NOW!"
+end if
+if hrsSleep >= 7.5 
+  snoozePress = 0
+elif hrsSleep <= 7
+  snoozePress = hrsSleep/2
+end if 
+enter shower
+showerTime = hrsSleep*2
+Towel off
+if mood = "grumpy"
+  play loud music
+elif mood = "happy" 
+  play showerPlaylist
+end if
+Brush teeth
+get hairState
+while hair is "wet"
+  do not comb
+if hair = "dry"
+  comb
+end if
+Put on deodorant
+get temp
+if temp <= 50 
+  moisturize
+elif temp >= 51
+  leave bathroom
+end if 
+find clothes
+if temp <= 50 
+  wear pants
+elif temp >= 51
+  wear jacket
+end if
+Pack bag
+Walk to kitchen
+while stomach = "hungry"
+  eat breakfast
+Obtain car keys
+if temp <= 50 
+  get Shoes
+elif temp >= 50 
+  get Sandals
+end if
+if get Shoes
+  tie right shoe
+  tie left shoe
+end if 
+if mouth = "dry"
+  get water
+end if 
+while mouth = "thirsty" 
+  drink water
+walk to car
+start ignition
+if hrs = 7 and min > = 25
+  speed > speedLimit
+elif hrs = 7 and min <= 20
+  speed = speedLimit
+end if 
+Drive to school
+get day
+if day = "Wednesday"
+  park at AC
+else 
+  park behind CPAC
+end if 
+Leave car
+if day /= "Wednesday" 
+  if hrs = 7 and min >= 55
+    run to chapel
+elif day = "Saturday" 
+  if hrs = 7 and min >= 55
+    run to class
+else
+  walk to chapel
+get seatsAvail
+if seatsAvail <= 3
+  sit in front row 
+else 
+  sit in Senior Section
+get humphrey
+while humphrey = "sitting"
+  sit quietly in chapel
