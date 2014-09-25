@@ -83,11 +83,13 @@ elif day = "Saturday"
     run to class
 else
   walk to chapel
+end if
 get seatsAvail
 if seatsAvail <= 3
   sit in front row 
 else 
   sit in Senior Section
+end if
 get humphrey
 while humphrey = "sitting"
   sit quietly in chapel
