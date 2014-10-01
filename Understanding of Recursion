@@ -1,0 +1,4 @@
+  Recursion is a form of iterations executed by the computer through functions calling themselves and is used to detail and 
+execute algorithms. Recursive algorithms are where a procedure for a certain job is detailed relative to the same procedure 
+applied to a smaller job. Recursive solutions must have a base case where recursion is not necessary. Finally, the stack 
+storage mechanis, is used along with recursion in nested structures.
