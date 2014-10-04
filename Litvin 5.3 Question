@@ -1,0 +1,15 @@
+  Rerserved words are specific words in Java of a given number that are 'reserved' for a 'special purpose' as opposed to other 
+words that are simply random names assigned to objects, classes, and such by the coder. Reserved words are important to programs
+for several reasons. Although they restrict the variety of names that a coder can assign to random variables, reserved words are 
+only used in a certain way and have a certain meaning. Therefore, reserved words make programming a lot easier by giving 
+programmers 'tools' to use to go about solving a certain problem. Reserved words show the coder and the reader that at that point
+in the program there is a specific and known process occuring. For example, 'if' indicates that if a certain parameter is fulfilled
+the program will do something. If the programmer had to code using phrases such as do this since this is true without reserved 
+words, the starting point would be unclear. Therefore, essentially reserved words make up a large portion of the program.
+  Syntax matters for very clear cut reasons. Java has a very rigid/strict syntax that is checked by the Java complier before the
+program compiles. Syntax errors prevent compilation. In addition, Java has very little redunacy meaning that unless the strict
+syntax rules are followed, the program will neither compile nor run. Style is irrevelvant in terms of the program compiling, but
+is extremely important to the program. Source code must follow basic/generic Java stylistic tendencie. Source code today is 
+very susceptible to edits and improvements. Therefore, if readability is low, the source code is basically useless. Readability 
+allows changes to easily be made to the source code and serves the purpose of coding for the reader's sake, not the programmer's.
+After all, the programmer should know what the code does; style helps to show the reader how the code works. 
