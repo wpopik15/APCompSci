@@ -19,6 +19,38 @@ public boolean badIndentation(int maxLines) {
 a) The title bar is empty when the class runs because the title bar is never constructed
 b) The window is left blank because the default constructor is used because void negates the HelloGui's constructor.
 
-12. ??? explain in class ???
+12. 
+a)
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Morning extends JFrame
+{
+  private EasySound rooster;
+
+  /**
+   *   Constructor
+   */
+  public Morning()
+  {
+    super("Morning");
+    rooster = new EasySound("roost.wav");
+    rooster.play();
+
+    Container c = getContentPane();
+    c.setBackground(Color.WHITE);
+  }
+
+  public static void main(String[] args)
+  {
+    Morning morning = new Morning();
+    morning.setSize(300, 150);
+    morning.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    morning.setVisible(true);
+  }
+}  
+b) workin' on it
+c)      ""
 
 worked on with Mike Borghi and Michael Gates
