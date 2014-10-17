@@ -1,0 +1,24 @@
+6. Eclipse gives the exception Exception in thread "main" java.lang.NoSuchMethodError: main
+
+7. The parenthesese in the if statement are required by Java syntax. The braces are a matter of style, but improve readability.
+
+8. The class compiles because there are no syntax errrors and the code is still valid. The message does not move across the screen
+because the semicolon negates the if statement causing xPos to never reset.
+
+9. Here is the restored code:
+public boolean badIndentation(int maxLines) {
+  int lineCount = 3;
+  while (lineCount < maxLines) {
+    System.out.println(lineCount);
+    lineCount++;
+  }
+  return true;
+}
+
+11. 
+a) The title bar is empty when the class runs because the title bar is never constructed
+b) The window is left blank because the default constructor is used because void negates the HelloGui's constructor.
+
+12. ??? explain in class ???
+
+worked on with Mike Borghi and Michael Gates
