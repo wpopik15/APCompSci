@@ -50,7 +50,55 @@ public class Morning extends JFrame
     morning.setVisible(true);
   }
 }  
-b) workin' on it
-c)      ""
+b) 
+import java.awt.*;
+import java.awt.event.*;
 
-worked on with Mike Borghi and Michael Gates
+import javax.swing.*;
+
+public class Morning extends JFrame implements ActionListener
+{
+  private EasySound rooster;
+  private EasySound cow;
+  /**
+   *   Constructor
+   */
+  private int time;
+  
+  public Morning()
+  {
+    
+    super("Morning");
+    cow = new EasySound("moo.wav");
+    rooster = new EasySound("roost.wav"); //error: missing quotations
+    rooster.play();
+    time = 0;
+       Timer clock = new Timer(5000, this); 
+       clock.start();
+    Container c = getContentPane();
+    c.setBackground(Color.WHITE); //error: missing t
+  }
+
+  public static void main(String[] args)
+  {
+    Morning morning = new Morning(); //error: missing parentheses 
+    morning.setSize(300, 150);
+    morning.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    morning.setVisible(true);
+  }
+    
+  public void actionPerformed(ActionEvent e)
+      {
+        time++;
+        if (time %2 == 1){
+            rooster.play();
+        }
+        else{
+            cow.play();
+        }
+            
+  }
+}  
+
+
+worked on with Mike Borghi, Rocky Chiu, and Michael Gates
