@@ -17,3 +17,21 @@ public class DigitSwap{
 
 }
 14. 
+package TestPackage;
+
+public class WeekDay {
+
+	public int findsWeekDay(int day){
+		int dayOfWeek1 = 0;
+		int dayOfWeek = (dayOfWeek1 + (day - 1)) % 7;
+		return dayOfWeek;
+	}
+	
+	public static void main(String args[]) { 
+		WeekDay result = new WeekDay();
+		System.out.println(result.findsWeekDay(27));
+	} 
+}
+15.
+
+worked on with Michael Gates
