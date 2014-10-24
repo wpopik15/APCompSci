@@ -1,0 +1,11 @@
+6.a) 0
+  b) 0
+  c) 5.0
+  d) 5.0
+  e) 3
+7.a) The value of balance is 105 because althought the rate is a double the balance is cast as type int.
+  b) The value of gasMileage is 19.0 because gasMileage is declared as type double before it is calculated.
+8. count += (total/pages - 5) * words - 1; I ran this in Eclipse w/ experimental values to check my solution.
+9.
+12.
+16.
