@@ -3,9 +3,30 @@
   c) 5.0
   d) 5.0
   e) 3
+  
 7.a) The value of balance is 105 because althought the rate is a double the balance is cast as type int.
   b) The value of gasMileage is 19.0 because gasMileage is declared as type double before it is calculated.
+  
 8. count += (total/pages - 5) * words - 1; I ran this in Eclipse w/ experimental values to check my solution.
-9.
-12.
-16.
+
+9. Initially, the statement prints "The travel distance is 0.0," while it should be printing that the distance 
+is 10082. The bug occurs because 1/2 is computed in int division and is truncated to 0, causing the statement 
+to equal zero. The corrected line of code reads: System.out.println((double)1 / 2 * (g * t * t)); where 1/2
+is cast as a type double before it is computed, returning the correct value.
+
+12. The syntax error occurs because temp is never cast as a datatype. While both a and b are declared as type
+doubles, temp is declared as type int. Therefore Eclipse throws the error "Type mismatch: cannot convert from
+double to int." temp must be initially declared as type double rather than int for the code to compile. 
+
+16. The code added into the BMI program is as follows:
+ // Returns BMI equal to weight in kilograms divided
+ // over squared height in meters.
+  private double calculateBmi(int lbs, int inches){
+	  double height;
+	  double weight;
+	  double kilogconvert = 0.454;
+	  double meterconvert = 0.0254;
+	  height = (inches * meterconvert);
+	  weight = (lbs * kilogconvert);
+	  return weight / (height * height);
+  }
