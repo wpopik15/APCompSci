@@ -1,0 +1,48 @@
+package Halloween;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class Pumpkin extends JPanel {
+	
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		this.setBackground(Color.BLACK);
+		
+		g.setColor(Color.ORANGE);
+		g.fillOval(225, 200, 500, 350);
+		
+		g.setColor(Color.BLACK);
+		g.fillOval(550, 300, 100, 75);
+		
+		g.fillOval(300, 300, 100, 75);
+		
+		g.setColor(Color.BLACK);
+		g.fillRoundRect(375, 450, 200, 25, 5, 5);
+		
+		g.setColor(Color.WHITE);
+		g.fillOval(575, 302, 40, 30);
+		g.fillOval(325, 302, 40, 30);
+		
+		g.setColor(Color.RED);
+		g.drawString("A killer pumpkin, obviously (maybe a cannabalistic candy apple?).", 35, 120);
+		/**g.drawLine(300, 700, 150, 300);
+		g.drawLine(300, 800, 175, 325);
+		g.drawLine(300, 900, 200, 350);
+		**/
+		g.setColor(Color.GREEN);
+		g.fillRect(450, 50, 50, 150);
+		g.fillRect(300, 50, 150, 50);
+	
+		
+		/**int xPoints[] = {75, 300, 400, 600};
+	    int yPoints[] = {75, 200, 300, 450};
+		int nPoints = 4;
+		g.setColor(Color.GREEN);
+		g.fillPolygon(xPoints, yPoints, nPoints);
+		**/
+		
+	}
+}
