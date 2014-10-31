@@ -1,0 +1,19 @@
+package Halloween;
+
+import javax.swing.*;
+
+public class testPumpkin {
+	public static void main(String[] args) {
+		
+		JPanel panel = new Pumpkin();
+		JFrame application = new JFrame("Title");
+		
+		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		application.add(panel);
+		application.setTitle("PumpkinDrawing");
+		
+		application.setSize(1000,600);
+		application.setVisible(true);
+	}
+}
