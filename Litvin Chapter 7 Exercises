@@ -1,0 +1,42 @@
+4. 
+public double totalWages(double hours, double rate)
+{
+ double wages;
+ double overtime;
+ double overrate;
+ if(hours > 40){
+	 overrate = 1.5 * rate;
+	 overtime = (hours - 40);
+	 wages = (overtime * overrate) + (40 * rate);
+ }
+ else{
+	 wages = hours * rate;
+ }
+ return wages;
+}
+14. Note: this class assumes the avg is an int and there are no +/- grades (ex: A-)
+public class Grade {
+	public char gradeCalc(int avg){
+		char grade;
+		if(100 - avg < 11){
+			return grade = 'A';
+		}
+		else if(100 - avg < 21){
+			return grade = 'B';
+		}
+		else if(100 - avg < 31){
+			return grade = 'C';
+		}
+		else if(100 - avg < 41){
+			return grade = 'D';
+		}
+		else{ 
+			return grade = 'F';
+		}
+		
+	}
+	public static void main(String[] args){
+		Grade output = new Grade();
+		System.out.println(output.gradeCalc(89));
+	}
+}
