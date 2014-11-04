@@ -41,4 +41,37 @@ public class Grade {
 	}
 }
 16. 
+import java.util.Scanner;
 
+public class BookOrder {
+	public static double getOrderTotal(int bp, int nb){
+	   double bpcost = 18.95;
+	   double nbcost = 21.95;
+	   double reducdcst = 14.00;
+	   double orderTotal;
+	   if(bp == 1 && nb == 1){
+		   orderTotal = 37.95;
+	   }
+	   else if(bp + nb >= 3){
+		   orderTotal = (bp * bpcost) + (nb * nbcost);
+	   }
+	   else if(bp + nb >= 12){
+		   orderTotal = (bp + nb) * reducdcst;
+	   }
+	   else{
+		   orderTotal = (bp * bpcost) + (nb * nbcost);
+	   }
+	   return orderTotal;
+	}
+
+	public static void main(String[] args){
+		System.out.println("Enter the number of Be Prepared books: ");
+	    Scanner scan = new Scanner(System.in);
+	    int b = scan.nextInt();
+	    System.out.println("Enter the number of Next Best books: ");
+	    int n = scan.nextInt();
+	    BookOrder total = new BookOrder();
+	    System.out.println("The total cost is $" + total.getOrderTotal(b, n));
+	    
+	}
+}
