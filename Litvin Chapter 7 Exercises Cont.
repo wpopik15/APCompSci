@@ -3,7 +3,21 @@ a) x && y || !a && !b
 b) if(x != 7 || x <= 7)
 
 8.
+a) if((x + 2 > a || x - 2 < b) && y >= 0)
+b) if((a >= b && a >= c) && (a % 2 == 0))
 
 10.
+public boolean seq(int a, int b, int c){
+		if(c == 0){
+			return false;
+		}
+		else if((a * c) == (b * b)){
+			return true;
+		}
+		else{ 
+			return false;
+		}
+	}
 
 11.
+a) 
