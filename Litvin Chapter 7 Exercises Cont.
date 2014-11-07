@@ -8,16 +8,16 @@ b) if((a >= b && a >= c) && (a % 2 == 0))
 
 10.
 public boolean seq(int a, int b, int c){
-		if(c == 0){
-			return false;
-		}
-		else if((a * c) == (b * b)){
-			return true;
-		}
-		else{ 
-			return false;
-		}
+	if(c == 0){
+		return false;
 	}
+	else if((a * c) == (b * b)){
+		return true;
+	}
+	else{ 
+		return false;
+	}
+}
 
 11.
 a) 
