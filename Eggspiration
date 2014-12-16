@@ -1,0 +1,30 @@
+package APClass;
+
+import java.util.Scanner;
+
+public class SpoiledEggs {
+	public String expirationDate(int digit){
+		int jd = digit + 60; // 60 days is shelf life 
+		int l = jd + 68569;
+		int n = ( 4 * l ) / 146097;
+		l = l - ( 146097 * n + 3 ) / 4;
+		int i = ( 4000 * ( l + 1 ) ) / 1461001;
+		l = l - ( 1461 * i ) / 4 + 31;
+		int j = ( 80 * l ) / 2447;
+		int d = l - ( 2447 * j ) / 80;
+		l = j / 11;
+		int m = j + 2 - ( 12 * l );
+		int y = 100 * ( n - 49 ) + i + l; 
+		String date;
+		return date = ""+m+"/"+d+"/"+y;
+	}
+	
+	public static void main(String[] args){
+		System.out.println("Enter the three digit number on the carton: ");
+	    Scanner scan = new Scanner(System.in);
+	    int b = scan.nextInt();
+	    SpoiledEggs greg = new SpoiledEggs();
+	    System.out.println("The expiration date is:" + greg.expirationDate(b));
+	    
+	}
+}
