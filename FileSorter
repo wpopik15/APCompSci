@@ -1,0 +1,29 @@
+package Files;
+
+import java.io.*;
+import java.util.*;
+
+public class IntegersFromFile {
+	public static void main(String[] args) {
+		Scanner file = null;
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		
+		try {
+			file = new Scanner(new File("output.txt"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		while(file.hasNext()){
+			if (file.hasNextInt()) list.add(file.nextInt());
+			else file.next();
+		}
+		
+		Collections.sort(list);
+		
+		for (Integer i: list) System.out.println(i);
+		
+		
+	}
+}
+**worked on with Philippe**
